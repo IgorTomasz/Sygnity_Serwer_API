@@ -18,13 +18,13 @@ namespace CountNextTaskDate.Controllers
 
 
 
-		[HttpPost]
+		[HttpPost("/count")]
 		public async Task<IActionResult> Post(NextTaskRequest request)
 		{
 			return Created("",await _repository.Calculate(request));
 		}
 
-		[HttpGet]
+		[HttpGet("/giveLast")]
 		public async Task<IActionResult> GetLast()
 		{
 			return Ok(await _repository.Get());
