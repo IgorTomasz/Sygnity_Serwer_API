@@ -1,0 +1,1 @@
+# Sygnity_Serwer_API
